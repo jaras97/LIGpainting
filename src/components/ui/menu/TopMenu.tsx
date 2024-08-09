@@ -9,7 +9,7 @@ export const TopMenu = () => {
   const openSideMenu = useUIStore((state) => state.openSideMenu);
   const closeMenu = useUIStore((state) => state.closeSideMenu);
   return (
-    <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-10 py-3">
+    <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-2 md:px-10 py-3">
       <div className="flex items-center gap-4 text-[#0e141b]">
         <IoMenu
           className="w-7 h-7 md:hidden"
@@ -19,7 +19,7 @@ export const TopMenu = () => {
           <Image alt="logo" src="./logotipoLIG2.svg" width={80} height={80} />
         </div>
         <h2 className="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] ">
-          LIG painting services
+          LIG painting
         </h2>
       </div>
       <div className="flex flex-1 justify-end gap-8 ">
