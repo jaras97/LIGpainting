@@ -1,5 +1,6 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -10,9 +11,19 @@ const Footer: React.FC = () => {
           <p className="text-sm">© 2023 LIG painting. All rights reserved.</p>
         </div>
         <div className="flex space-x-4">
-          <Link href="/contact" className="text-sm hover:underline">
+          <Link href="/contact" title="Contact LIG painting">
             Contact
           </Link>
+          <a
+            href="https://www.instagram.com/LIGPAINTINGINC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-400"
+            title="Follow LIG painting on Instagram"
+            aria-label="Instagram"
+          >
+            <FaInstagram size={24} />
+          </a>
         </div>
       </div>
     </footer>

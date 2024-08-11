@@ -2,7 +2,6 @@
 
 import { useState, useCallback } from "react";
 
-// Interfaz para los datos del formulario
 interface FormData {
   firstName: string;
   lastName: string;
@@ -10,7 +9,6 @@ interface FormData {
   message: string;
 }
 
-// Componente para un campo de formulario
 function FormField({
   label,
   name,
@@ -19,6 +17,8 @@ function FormField({
   onChange,
   error,
   placeholder = "",
+  title,
+  ariaInvalid,
 }: {
   label: string;
   name: keyof FormData;
@@ -29,6 +29,8 @@ function FormField({
   ) => void;
   error?: string;
   placeholder?: string;
+  title?: string;
+  ariaInvalid?: boolean;
 }) {
   return (
     <div className="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
@@ -46,6 +48,7 @@ function FormField({
             onChange={onChange}
             aria-invalid={!!error}
             placeholder={placeholder}
+            title={title}
           />
         ) : (
           <input
@@ -58,6 +61,7 @@ function FormField({
             onChange={onChange}
             aria-invalid={!!error}
             placeholder={placeholder}
+            title={title}
           />
         )}
         {error && <p className="text-red-500 text-sm">{error}</p>}
@@ -156,6 +160,8 @@ export default function Contact() {
             value={formData.firstName}
             onChange={handleChange}
             error={errors.firstName}
+            aria-invalid={!!errors.firstName}
+            title="First Name"
           />
           <FormField
             label="Last Name"
@@ -163,6 +169,8 @@ export default function Contact() {
             value={formData.lastName}
             onChange={handleChange}
             error={errors.lastName}
+            ariaInvalid={!!errors.lastName}
+            title="Last Name"
           />
           <FormField
             label="Email"
@@ -171,6 +179,8 @@ export default function Contact() {
             value={formData.email}
             onChange={handleChange}
             error={errors.email}
+            ariaInvalid={!!errors.email}
+            title="emaiñ"
           />
           <FormField
             label="Message"
