@@ -1,5 +1,6 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,15 +26,18 @@ export default function Home() {
                         Trusted Residential &amp; Commercial Painting Services
                       </h1>
                       <h2 className="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                        PaintPro is a full-service painting company. We provide
-                        all of your painting needs, from residential to
+                        LIG painting is a full-service painting company. We
+                        provide all of your painting needs, from residential to
                         commercial. Our goal is to deliver the best service at
                         the best price.
                       </h2>
                     </div>
-                    <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1980e6] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                    <Link
+                      className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1980e6] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                      href={"/contact"}
+                    >
                       <span className="truncate">Get a Quote</span>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

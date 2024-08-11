@@ -2,12 +2,17 @@
 
 import { useUIStore } from "@/store";
 import Image from "next/image";
-import { IoCartOutline, IoSearchOutline, IoMenu } from "react-icons/io5";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { IoMenu } from "react-icons/io5";
 
 export const TopMenu = () => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
   const openSideMenu = useUIStore((state) => state.openSideMenu);
   const closeMenu = useUIStore((state) => state.closeSideMenu);
+
+  const currentPath = usePathname();
+
   return (
     <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-2 md:px-10 py-3">
       <div className="flex items-center gap-4 text-[#0e141b]">
@@ -16,42 +21,26 @@ export const TopMenu = () => {
           onClick={isSideMenuOpen ? closeMenu : openSideMenu}
         />
         <div className="size-20 hidden md:block">
-          <Image alt="logo" src="./logotipoLIG2.svg" width={80} height={80} />
+          <Link href={"/"}>
+            <Image alt="logo" src="./logotipoLIG2.svg" width={80} height={80} />
+          </Link>
         </div>
-        <h2 className="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] ">
+        <Link
+          className="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] "
+          href={"/"}
+        >
           LIG painting
-        </h2>
+        </Link>
       </div>
       <div className="flex flex-1 justify-end gap-8 ">
-        <div className="md:flex items-center gap-9 hidden">
-          <a
-            className="text-[#0e141b] text-sm font-medium leading-normal"
-            href="#"
+        {currentPath !== "/contact" && (
+          <Link
+            className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+            href={"/contact"}
           >
-            Services
-          </a>
-          <a
-            className="text-[#0e141b] text-sm font-medium leading-normal"
-            href="#"
-          >
-            About
-          </a>
-          <a
-            className="text-[#0e141b] text-sm font-medium leading-normal"
-            href="#"
-          >
-            Gallery
-          </a>
-          <a
-            className="text-[#0e141b] text-sm font-medium leading-normal"
-            href="#"
-          >
-            FAQ
-          </a>
-        </div>
-        <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
-          <span className="truncate">Get a Quote</span>
-        </button>
+            <span className="truncate">Get a Quote</span>
+          </Link>
+        )}
       </div>
     </header>
   );
