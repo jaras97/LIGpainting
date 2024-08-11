@@ -3,9 +3,10 @@
 import { SideBar, TopMenu } from "@/components";
 import Footer from "@/components/ui/footer/Footer";
 import FloatingWhatsAppButton from "@/components/whatsapp/FloatingWhatsAppButton";
+
 import { useEffect, useState } from "react";
 
-export default function ShopLayout({
+export default function MainLayout({
   children,
 }: {
   children: React.ReactNode;
