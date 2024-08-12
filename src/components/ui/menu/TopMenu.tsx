@@ -37,6 +37,14 @@ export const TopMenu = () => {
         <div className="md:flex items-center gap-9 hidden">
           <Link
             className="text-[#0e141b] text-sm font-medium leading-normal"
+            href="/gallery"
+          >
+            Gallery
+          </Link>
+        </div>
+        <div className="md:flex items-center gap-9 hidden">
+          <Link
+            className="text-[#0e141b] text-sm font-medium leading-normal"
             href="/about"
           >
             About us

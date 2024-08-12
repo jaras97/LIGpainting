@@ -3,16 +3,7 @@
 import { useUIStore } from "@/store";
 import clsx from "clsx";
 import Link from "next/link";
-import {
-  IoCloseOutline,
-  IoLogInOutline,
-  IoLogOutOutline,
-  IoPeopleOutline,
-  IoPersonOutline,
-  IoSearchOutline,
-  IoShirtOutline,
-  IoTicketOutline,
-} from "react-icons/io5";
+import { IoCloseOutline } from "react-icons/io5";
 
 export const SideBar = () => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
@@ -61,6 +52,15 @@ export const SideBar = () => {
               >
                 <p className="text-[#1C160C] text-base font-bold leading-tight truncate">
                   Home
+                </p>
+              </Link>
+              <Link
+                className="flex h-12 items-center gap-4 rounded-full px-4 hover:bg-[#F4EFE6] cursor-pointer"
+                href={"/gallery"}
+                onClick={closeMenu}
+              >
+                <p className="text-[#1C160C] text-base font-bold leading-tight truncate">
+                  Gallery
                 </p>
               </Link>
               <Link
