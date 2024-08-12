@@ -25,7 +25,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Error sending email:", error);
-    console.log("process.env.EMAIL_USER:", process.env.EMAIL_USER);
     return NextResponse.json({ success: false });
   }
 }
