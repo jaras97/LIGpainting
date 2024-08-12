@@ -63,6 +63,15 @@ export const SideBar = () => {
                   Home
                 </p>
               </Link>
+              <Link
+                className="flex h-12 items-center gap-4 rounded-full px-4 hover:bg-[#F4EFE6] cursor-pointer"
+                href={"/about"}
+                onClick={closeMenu}
+              >
+                <p className="text-[#1C160C] text-base font-bold leading-tight truncate">
+                  About
+                </p>
+              </Link>
 
               <Link
                 className="flex h-12 items-center gap-4 rounded-full px-4 hover:bg-[#F4EFE6] cursor-pointer"
