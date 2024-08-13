@@ -4,29 +4,10 @@ import GalleryItem from "@/components/gallery/GalleryItem";
 import React from "react";
 
 const categories = ["All", "Residential", "Commercial", "Exterior", "Interior"];
-const galleryItems = [
-  {
-    imageUrl:
-      "https://cdn.usegalileo.ai/sdxl10/562d43e5-c0ca-4362-9223-88ad3ae7e366.png",
-    title: "Modern Residential House Painting",
-  },
-  {
-    imageUrl:
-      "https://cdn.usegalileo.ai/sdxl10/32c0e20d-142a-49df-9a41-c30ad6952c90.png",
-    title: "Commercial Building Exterior Painting",
-  },
-  {
-    imageUrl:
-      "https://cdn.usegalileo.ai/sdxl10/562d43e5-c0ca-4362-9223-88ad3ae7e366.png",
-    title: "Modern Residential House Painting",
-  },
-  {
-    imageUrl:
-      "https://cdn.usegalileo.ai/sdxl10/32c0e20d-142a-49df-9a41-c30ad6952c90.png",
-    title: "Commercial Building Exterior Painting",
-  },
-  // Agrega más elementos según sea necesario
-];
+interface GalleryItemType {
+  imageUrl: string;
+  title: string;
+}
 
 export default async function GalleryPage() {
   const imageUrl = await getGallery();
@@ -50,7 +31,7 @@ export default async function GalleryPage() {
           ))}
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-          {imageUrl?.map((item, index) => (
+          {imageUrl?.map((item: GalleryItemType, index: number) => (
             <GalleryItem
               key={index}
               imageUrl={item.imageUrl}
