@@ -1,9 +1,7 @@
-interface SeedGalleryItem {
+export interface SeedGalleryItem {
   imageUrl: string;
   title: string;
-
   createdAt: Date;
-
   type: ValidTypes;
 }
 
