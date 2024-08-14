@@ -40,7 +40,7 @@ export const GalleryComponent = ({ galleryList }: Props) => {
           <GalleryCategory key={category} label={category} />
         ))}
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-4">
         {galleryList?.map((item: SeedGalleryItem, index: number) => (
           <GalleryItem
             key={index}

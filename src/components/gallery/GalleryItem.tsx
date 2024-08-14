@@ -14,7 +14,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-3 pb-3">
-      <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+      <div className="relative w-full aspect-square rounded-xl overflow-hidden cursor-pointer">
         <Image
           src={imageUrl}
           alt={title}
