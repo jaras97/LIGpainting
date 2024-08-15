@@ -54,7 +54,7 @@ export const SideBar = () => {
                   Home
                 </p>
               </Link>
-              <Link
+              {/* <Link
                 className="flex h-12 items-center gap-4 rounded-full px-4 hover:bg-[#F4EFE6] cursor-pointer"
                 href={"/gallery"}
                 onClick={closeMenu}
@@ -62,7 +62,7 @@ export const SideBar = () => {
                 <p className="text-[#1C160C] text-base font-bold leading-tight truncate">
                   Gallery
                 </p>
-              </Link>
+              </Link> */}
               <Link
                 className="flex h-12 items-center gap-4 rounded-full px-4 hover:bg-[#F4EFE6] cursor-pointer"
                 href={"/about"}

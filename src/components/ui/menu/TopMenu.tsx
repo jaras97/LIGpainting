@@ -34,14 +34,14 @@ export const TopMenu = () => {
       </div>
 
       <div className="flex flex-1 justify-end gap-8 ">
-        <div className="md:flex items-center gap-9 hidden">
+        {/* <div className="md:flex items-center gap-9 hidden">
           <Link
             className="text-[#0e141b] text-sm font-medium leading-normal"
             href="/gallery"
           >
             Gallery
           </Link>
-        </div>
+        </div> */}
         <div className="md:flex items-center gap-9 hidden">
           <Link
             className="text-[#0e141b] text-sm font-medium leading-normal"
