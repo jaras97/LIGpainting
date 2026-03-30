@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "services": "Services",
+    "process": "Process",
+    "work": "Work",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "quote": "Get a Quote"
+  },
+
+  "hero": {
+  "title": "Premium Painting for Homes & Businesses",
+  "subtitle": "A clean, professional finish—delivered with a simple, reliable process.",
+  "primary": "Get a Free Quote",
+  "secondary": "Call Now",
+  "badge": "Licensed & Insured",
+  "chips": ["Clean prep", "Sharp lines", "Premium finish"],
+  "panel": {
+    "title": "Project-ready crews",
+    "subtitle": "Residential & Commercial painting",
+    "replyTime": "24h",
+    "replyLabel": "reply*",
+    "note": "*Adjust this claim if needed."
+  },
+  "features": [
+    {
+      "t": "Crisp protection",
+      "d": "We cover floors, furniture, and surfaces."
+    },
+    {
+      "t": "Detail-first finish",
+      "d": "Edges, corners, and trim done right."
+    },
+    {
+      "t": "Clean job site",
+      "d": "We leave it spotless—every time."
+    }
+  ],
+  "stats": [
+    { "k": "5★", "v": "Rated" },
+    { "k": "2yr", "v": "Warranty" },
+    { "k": "0%", "v": "Mess left" }
+  ]
+},
+
+  "services": {
+  "title": "Services",
+  "subtitle": "Clean prep, crisp lines, and a premium finish for every project.",
+  "description": "Professional preparation and clean finishes with close attention to detail.",
+  "items": [
+    "Interior Painting",
+    "Exterior Painting",
+    "Residential",
+    "Commercial",
+    "Drywall & Repairs",
+    "Cabinets"
+  ],
+  "tags": ["Protect", "Prep", "Finish"]
+},
+
+  "process": {
+  "title": "Our Process",
+  "subtitle": "A simple, reliable process that keeps your project stress-free.",
+  "meta": ["Clear timeline", "Clean communication", "Quality control"],
+  "steps": [
+    {
+      "t": "Fast Estimate",
+      "d": "Tell us what you need. We’ll respond quickly with the next steps."
+    },
+    {
+      "t": "Prep & Protect",
+      "d": "We cover, tape, patch, and sand to achieve crisp, clean results."
+    },
+    {
+      "t": "Paint & Detail",
+      "d": "We apply even coats, sharp lines, and premium materials with care."
+    },
+    {
+      "t": "Cleanup",
+      "d": "We leave your home or business clean, organized, and ready to enjoy."
+    },
+    {
+      "t": "Final Walkthrough",
+      "d": "We review everything with you to make sure the result is exactly right."
+    }
+  ]
+},
+
+  "work": {
+    "title": "Recent Work",
+    "subtitle": "A few examples of our finishes and details."
+  },
+
+  "faq": {
+  "title": "FAQ",
+  "subtitle": "Quick answers. If you have something specific, contact us.",
+  "items": [
+    {
+      "q": "Do you provide free estimates?",
+      "a": "Yes. Share your details and we’ll schedule a quick visit or call."
+    },
+    {
+      "q": "What paint brands do you use?",
+      "a": "We recommend premium options based on the surface, use, and your budget."
+    },
+    {
+      "q": "How long does a typical job take?",
+      "a": "It depends on the scope and preparation. You’ll receive a clear timeline upfront."
+    },
+    {
+      "q": "Do you protect floors and furniture?",
+      "a": "Always. Protection and preparation are essential parts of our process."
+    },
+    {
+      "q": "Are you insured?",
+      "a": "Yes. We are licensed and insured (confirm wording based on your area)."
+    }
+  ]
+},
+
+  "contact": {
+  "title": "Contact",
+  "subtitle": "Get a free estimate. We reply fast.",
+  "name": "Name",
+  "email": "Email",
+  "phone": "Phone",
+  "message": "Tell us about your project",
+  "send": "Send",
+  "consent": "By submitting, you agree to be contacted about your estimate.",
+  "detailsTitle": "Contact details",
+  "serviceArea": "Service area: Rhode Island, Massachusetts",
+  "call": "Call",
+  "backToTop": "Back to top",
+  "tip": "Tip: Add Google Reviews and a small map later for extra trust.",
+  "formAlert": "Next step: connect this form to Resend (email) or Formspree."
+}
+}

@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "process": "Proceso",
+    "work": "Proyectos",
+    "faq": "Preguntas",
+    "contact": "Contacto",
+    "quote": "Cotizar"
+  },
+
+  "hero": {
+  "title": "Pintura profesional para hogares y negocios",
+  "subtitle": "Acabados impecables con un proceso simple, confiable y sin complicaciones.",
+  "primary": "Cotización Gratis",
+  "secondary": "Llamar Ahora",
+  "badge": "Licenciados y Asegurados",
+  "chips": ["Preparación limpia", "Líneas definidas", "Acabado premium"],
+  "panel": {
+    "title": "Equipo listo para cada proyecto",
+    "subtitle": "Pintura residencial y comercial",
+    "replyTime": "24h",
+    "replyLabel": "de respuesta*",
+    "note": "*Ajusta esta promesa si es necesario."
+  },
+  "features": [
+    {
+      "t": "Protección impecable",
+      "d": "Cubrimos pisos, muebles y superficies."
+    },
+    {
+      "t": "Acabado con detalle",
+      "d": "Esquinas, bordes y molduras bien hechas."
+    },
+    {
+      "t": "Área limpia",
+      "d": "Dejamos todo impecable al finalizar."
+    }
+  ],
+  "stats": [
+    { "k": "5★", "v": "Calidad" },
+    { "k": "2 años", "v": "Garantía" },
+    { "k": "0%", "v": "Desorden" }
+  ]
+},
+
+  "services": {
+  "title": "Servicios",
+  "subtitle": "Preparación limpia, líneas definidas y un acabado impecable en cada proyecto.",
+  "description": "Preparación profesional y acabados limpios con máxima atención al detalle.",
+  "items": [
+    "Pintura Interior",
+    "Pintura Exterior",
+    "Residencial",
+    "Comercial",
+    "Reparación de Drywall",
+    "Gabinetes"
+  ],
+  "tags": ["Protección", "Preparación", "Acabado"]
+},
+
+  "process": {
+  "title": "Nuestro Proceso",
+  "subtitle": "Un proceso simple y confiable para que tu proyecto avance sin complicaciones.",
+  "meta": ["Tiempo claro", "Comunicación limpia", "Control de calidad"],
+  "steps": [
+    {
+      "t": "Cotización rápida",
+      "d": "Cuéntanos lo que necesitas y te responderemos rápidamente con los siguientes pasos."
+    },
+    {
+      "t": "Preparación y protección",
+      "d": "Protegemos superficies, encintamos, resanamos y lijamos para lograr un acabado limpio y preciso."
+    },
+    {
+      "t": "Pintura y detalles",
+      "d": "Aplicamos capas uniformes, líneas definidas y materiales de calidad con gran atención al detalle."
+    },
+    {
+      "t": "Limpieza",
+      "d": "Dejamos tu hogar o negocio limpio, ordenado y listo para disfrutar."
+    },
+    {
+      "t": "Revisión final",
+      "d": "Revisamos todo contigo para asegurarnos de que el resultado sea exactamente el esperado."
+    }
+  ]
+},
+
+  "work": {
+    "title": "Proyectos Recientes",
+    "subtitle": "Algunos ejemplos de nuestros acabados y calidad en cada detalle."
+  },
+
+  "faq": {
+  "title": "Preguntas Frecuentes",
+  "subtitle": "Respuestas rápidas. Si tienes algo específico, contáctanos.",
+  "items": [
+    {
+      "q": "¿Ofrecen cotizaciones gratuitas?",
+      "a": "Sí. Comparte los detalles de tu proyecto y programamos una visita o llamada."
+    },
+    {
+      "q": "¿Qué marcas de pintura utilizan?",
+      "a": "Recomendamos opciones de alta calidad según la superficie, uso y presupuesto."
+    },
+    {
+      "q": "¿Cuánto tiempo toma un proyecto típico?",
+      "a": "Depende del tamaño y la preparación. Te damos un tiempo claro desde el inicio."
+    },
+    {
+      "q": "¿Protegen pisos y muebles?",
+      "a": "Siempre. La protección y preparación son parte fundamental de nuestro trabajo."
+    },
+    {
+      "q": "¿Están asegurados?",
+      "a": "Sí. Contamos con licencia y seguro (ajustar según tu área si es necesario)."
+    }
+  ]
+},
+
+  "contact": {
+  "title": "Contacto",
+  "subtitle": "Solicita tu cotización gratuita. Respondemos rápidamente.",
+  "name": "Nombre",
+  "email": "Correo electrónico",
+  "phone": "Teléfono",
+  "message": "Cuéntanos sobre tu proyecto",
+  "send": "Enviar mensaje",
+  "consent": "Al enviar este formulario, aceptas que podamos contactarte sobre tu cotización.",
+  "detailsTitle": "Detalles de contacto",
+  "serviceArea": "Área de servicio: Rhode Island, Massachusetts",
+  "call": "Llamar",
+  "backToTop": "Volver arriba",
+  "tip": "Tip: Agrega Google Reviews y un pequeño mapa más adelante para generar más confianza.",
+  "formAlert": "Siguiente paso: conecta este formulario con Resend (email) o Formspree."
+}
+}
